@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { Route , Switch, Redirect } from 'react-router-dom';
 import 'boxicons';
+import './default.scss'
 
 //layouts
 import MainLayout from './layouts/MainLayout';

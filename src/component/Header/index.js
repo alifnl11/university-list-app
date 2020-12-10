@@ -10,7 +10,7 @@ class Header extends Component {
             <header class="l-header">
               <nav class="nav header-grid">
                 <div>
-                  <a href="#" class="nav__logo">expert.id</a>
+                  <a href="#" class="nav__logo">Univ Search</a>
                 </div>
     
                 <div class="nav__menu" id="nav-menu">
