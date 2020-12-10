@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './styles.scss'
 import 'boxicons';
 import './main'
+import { Link } from 'react-router-dom';
 
 class Header extends Component {
     render () {
@@ -14,11 +15,18 @@ class Header extends Component {
     
                 <div class="nav__menu" id="nav-menu">
                   <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active_header">Home</a></li>
-                    <li class="nav__item"><a href="#featured" class="nav__link">Featured</a></li>
-                    <li class="nav__item"><a href="#new" class="nav__link">New</a></li>
-                    <li class="nav__item"><a href="#subscribed" class="nav__link">Subscribed</a></li>
-                    <li class="nav__item"><a href="login" class="nav__link active_header">Login</a></li>
+                    <li class="nav__item">
+                        <Link class="nav__link" to='/'>Home</Link>
+                    </li>
+                    <li class="nav__item">
+                        <Link class="nav__link" to='/newsletter'>Feature</Link>
+                    </li>
+                    <li class="nav__item">
+                        <Link class="nav__link" to='/favorite'>Favorite</Link>
+                    </li>
+                    <li class="nav__item">
+                        <Link class="nav__link" to='/login'>Login</Link>
+                    </li>
                   </ul>
                   
                 </div>
