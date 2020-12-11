@@ -1,0 +1,41 @@
+.container {
+    display: block;
+    margin: 3rem auto 0 auto;
+    padding-bottom: 3rem;
+    width: 80%;
+    max-width: 800px;
+}
+.heading{
+    font-size: var(--h1-font-size);
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    color: var(--dark-color);
+    text-align: center;
+}
+
+.search__label{
+    position: relative;
+}
+
+.container input {
+    width: 100%;
+    padding: 10px;
+    font-size: var(--normal-font-size);
+    color: #444;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.search__icon {
+    color: #444;
+    position: absolute;
+    font-size: 1.5rem;
+    top: -5px;
+    right: 10px;
+}
+
+@media screen and (min-width: 768px){
+    .heading{
+        padding: 1rem 0;
+    }
+}

@@ -1,15 +1,18 @@
 /* Home */
 .home{
-    background-color: var(--gray-color);
+    margin-top: 3rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("./../../assets/img/home_white.jpg");
+    background-color: var(--white-color);
+    height: 100%;
+    width: 100%;
 }
 
 .home__container{
     height: calc(100vh - 3rem);
 }
 
-.home__data {
-    padding-top: 6rem;
-}
 
 .home__title{
     align-self: center;
@@ -48,6 +51,9 @@
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 768px){
+    .home{
+        padding-top: 1.5rem;
+    }
     .home__container{
         height: 100vh;
     }

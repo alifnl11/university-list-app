@@ -6,15 +6,15 @@ import './styles.scss';
 import Posts from './../../component/UniversityList/index'
 import Pagination from './../../component/Pagination/pagination'
 
-
-import UniversityList from './../../component/UniversityList/index'
+import Search from '../../component/Search/search';
 
 
 const HomePage = () => {
     const [posts, setPosts ] = useState ([]);
     const [loading, setLoading] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
-    const [postsPerPage, setPostsPerPage] = useState(12);
+    const [postsPerPage] = useState(12);
+    const [searchTerm, setSearchTerm] = useState('') 
 
     useEffect(() => {
         const fetchPosts = async () => {
@@ -38,12 +38,12 @@ const HomePage = () => {
             <main className="l-main">
                 {/* HOME */}
                 <section className="home" id="home">
-
+                <Search setSearchTerm={setSearchTerm} loading={loading} />
                 </section>
-        
+                
                 {/* UNIVERSITY LIST */}
                 <section className="collection section">
-                    <Posts posts={currentPosts} loading={loading} />
+                    <Posts posts={currentPosts} loading={loading} searchTerm={searchTerm} />
                     <Pagination postsPerPage={postsPerPage} totalPosts={posts.length} paginate={paginate} />
                     {/* <UniversityList /> */}
                 </section>
