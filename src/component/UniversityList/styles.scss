@@ -21,11 +21,12 @@
 
 .univ__new{
     position: absolute;
+    margin-top: 10px;
     top: 0;
     left: 0;
     background-color: var(--first-color);
     color: var(--white-color);
-    padding: .3rem .75rem;
+    padding: .3rem 1rem;
     font-size: var(--small-font-size);
 }
 
