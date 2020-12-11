@@ -38,7 +38,7 @@ const HomePage = () => {
             <main className="l-main">
                 {/* HOME */}
                 <section className="home" id="home">
-                <Search setSearchTerm={setSearchTerm} loading={loading} />
+                <Search setSearchTerm={setSearchTerm}/>
                 </section>
                 
                 {/* UNIVERSITY LIST */}
