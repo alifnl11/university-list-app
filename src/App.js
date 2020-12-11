@@ -11,7 +11,8 @@ import LoginLayout from './layouts/LoginLayout'
 //pages
 import './default.scss';
 import HomePage from './pages/HomePage/index';
-import LoginPage from './pages/Login/index'
+import LoginPage from './pages/Login/index';
+import RegisterPage from './pages/Register/index';
 
 const initialState = {
   currentUser: null
@@ -53,7 +54,7 @@ class App extends Component {
 
   render() {
     const { currentUser } = this.state;
-    
+
     return (
       <div className="App">
         <div className="main">
@@ -68,6 +69,12 @@ class App extends Component {
                     <LoginLayout currentUser={currentUser}>
                       <LoginPage />
                     </LoginLayout>
+                )} />
+                <Route path="/register"  
+              render={() => currentUser ? <Redirect to="/" /> : ( 
+                  <LoginLayout currentUser={currentUser}>
+                    <RegisterPage />
+                  </LoginLayout>
                 )} />
           </Switch>
         </div>
