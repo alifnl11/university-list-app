@@ -3,6 +3,9 @@ import axios from 'axios';
 import 'boxicons';
 import './styles.scss';
 
+// page
+import Newsletter from './content/newsletter/newsletter';
+
 import Posts from './../../component/UniversityList/index'
 import Pagination from './../../component/Pagination/pagination'
 
@@ -46,6 +49,10 @@ const HomePage = () => {
                     <Posts posts={currentPosts} loading={loading} searchTerm={searchTerm} />
                     <Pagination postsPerPage={postsPerPage} totalPosts={posts.length} paginate={paginate} />
                     {/* <UniversityList /> */}
+                </section>
+
+                <section class="newsletter section" id="subscribed">
+                       <Newsletter />
                 </section>
             </main>
         </div>

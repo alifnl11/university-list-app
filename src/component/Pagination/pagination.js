@@ -1,4 +1,5 @@
 import React from 'react'
+import './styles.scss'
 
 const Pagination = ({ postsPerPage, totalPosts , paginate }) => {
     const pageNumbers = [];
@@ -11,15 +12,15 @@ const Pagination = ({ postsPerPage, totalPosts , paginate }) => {
 
     return (
         <nav>
-            <ul>
+            <div class="center">
                 {pageNumbers.map(number => (
-                    <li key={number} className='page-item'>
+                    <div class="pagination" key={number}>
                         <a onClick={() => paginate(number)} href="#" className='page-link'>
                             {number}
                         </a>
-                    </li>
+                    </div>
                 ))}
-            </ul>
+            </div>
         </nav>
     )
 }
