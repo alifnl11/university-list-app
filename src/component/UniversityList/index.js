@@ -5,7 +5,12 @@ import './styles.scss'
 const Posts = ({ posts, loading , searchTerm}) => {
     
     if(loading) {
-        return <h2>Loading..</h2>
+        return <div className="container"> 
+            <div className="loading">
+                <box-icon name='loader' animation='spin'></box-icon>
+                <h2>Loading...</h2>
+            </div>
+        </div>
     }
     
     return (

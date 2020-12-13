@@ -46,7 +46,7 @@ import axios from 'axios';
 // }
 
 // export default Search
-const Search = ({ setSearchTerm, loading }) => {
+const Search = ({ setSearchTerm, loading, title }) => {
     if(loading) {
         return <h2>Loading..</h2>
     }
@@ -54,7 +54,7 @@ const Search = ({ setSearchTerm, loading }) => {
     return(
         <div className="container">
         {/* Heading */}
-        <h2 className="heading">University Search: React Application</h2>
+        <h2 className="heading" >{title}</h2>
         {/* Search Input */}
         <label className="search__label" htmlFor="search-input">
                 <input 

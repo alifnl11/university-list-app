@@ -1,4 +1,10 @@
 /* univ Product */
+.loading{
+    // width: 1024px;
+    // justify-content: center;
+    text-align: center;
+}
+
 .univ__container{
     row-gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(150px,1fr));

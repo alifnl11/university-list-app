@@ -13,6 +13,7 @@ import './default.scss';
 import HomePage from './pages/HomePage/index';
 import LoginPage from './pages/Login/index';
 import RegisterPage from './pages/Register/index';
+import NewsPage from './pages/NewsPage/index';
 
 const initialState = {
   currentUser: null
@@ -62,6 +63,11 @@ class App extends Component {
               <Route exact path="/" render={() => (
                 <MainLayout currentUser={currentUser}>
                   <HomePage />
+                </MainLayout>
+              )} />
+              <Route exact path="/newsletter" render={() => (
+                <MainLayout currentUser={currentUser}>
+                  <NewsPage />
                 </MainLayout>
               )} />
               <Route exact path="/login" 

@@ -1,0 +1,39 @@
+{
+    "News": [
+        {
+        "id" : 1,
+        "title": "Jadwal Kegiatan SNMPTN 2021 Dimulai 4 Januari, Selengkapnya Cek di Sini",
+        "date": "Sabtu 12 Desember 2020 15:16 WIB",
+        "description": "JAKARTA - Pelaksanaan Seleksi Nasional Masuk Perguruan Tinggi (SNMPTN) 2021 akan segera dimulai awal tahun. Aktivitas masuk kampus negeri mulai terasa sejak 4 Januari 2021. Berdasarkan data dari Lembaga Test Masuk Perguruan Tinggi (LTMPT), penyelenggaraan SMNPTN 2021 memiliki kuota sebanyak minimum 20 persen.",
+        "source" : "news.okezone.com"
+        },
+        {
+            "id" : 2,
+            "title": "Polemik PPDB Zonasi, Siswa Cerdas Bisa Ikut Jalur Prestasi Mulai 1 Juli",
+            "date": "Senin 29 Juni 2020 06:07 WIB",
+            "description": "JAKARTA - Penerimaan Peserta Didik Baru (PPDB) jalur zonasi tahun ajaran 2020 untuk TK, SD, SMP, hingga SMA, menuai banyak kritik. Banyak peserta didik gagal masuk ke sekolah yang diinginkan lantaran usianya belum memenuhi persyaratan. PPDB jalur zonasi menjadi polemik di masyarakat.",
+            "source" : "news.okezone.com"
+        },
+        {
+            "id" : 3,
+            "title": "Sekolah Tatap Muka Ditetapkan per Januari 2021 oleh Empat Menteri",
+            "date": "Jum'at 20 November 2020 15:49 WIB",
+            "description": "JAKARTA – Kegiatan belajar di sekolah akan dimulai kembali per Januari 2021 untuk semua zona meski pandemi Covid-19 belum reda. Dengan begitu, peta warna risiko Covid-19 tidak lagi menjadi acuan pembukaan sekolah. Namun, pemerintah daerah setempat memiliki kewenangan mutlak untuk mengeluarkan izin pembelajaran tatap muka (PTT) ini menyesuaikan dengan kondisi masing-masing.",
+            "source" : "news.okezone.com"
+        },
+        {
+            "id" : 4,
+            "title": "Exoskeleton Buatan Unair-RS Soetomo Bantu Rehad Medik Penderita Stroke",
+            "date": "Selasa 08 Desember 2020 10:59 WIB",
+            "description": "SURABAYA - Tim Universitas Airlangga dan RS Dr. Soetomo menciptakan exoskeleton, alat rehabilitas medik yang dipasang di bagian tubuh penderita stroke. Alat ini digunakan untuk meningkatkan kemampuan penderita. Pengembangan alat ini berawal dari kehidupan pasien stroke yang harus melakukan rehabilitas medik di rumah sakit dengan bantuan perawat dalam melatih gerakan menggunakan alat yang ada dan akomodasi. Apalagi semua itu harus membutuhkan banyak waktu dan biaya.",
+            "source" : "news.okezone.com"
+        },
+        {
+            "id" : 5,
+            "title": "Ini 10 SMA Terbaik Se-Indonesia 2020 Versi LTMPT",
+            "date": "Senin 30 November 2020 10:33 WIB",
+            "description": "JAKARTA – Sebanyak 10 SMA terbaik se-Indonesia diumumkan Lembaga Tes Masuk Perguruan Tinggi.Penilaian dilakuan berdasarkan nilai Ujian Tulis Berbasis Komputer (UTBK) 2020.",
+            "source" : "news.okezone.com"
+        }
+    ]
+}

@@ -2,9 +2,10 @@ import React, { useState, useEffect} from 'react';
 import axios from 'axios';
 import 'boxicons';
 import './styles.scss';
+import Footer from './../../component/Footer/index'
 
 // page
-import Newsletter from './content/newsletter/newsletter';
+import Subscribe from './content/Subscribe/subscribe';
 
 import Posts from './../../component/UniversityList/index'
 import Pagination from './../../component/Pagination/pagination'
@@ -41,7 +42,7 @@ const HomePage = () => {
             <main className="l-main">
                 {/* HOME */}
                 <section className="home" id="home">
-                <Search setSearchTerm={setSearchTerm}/>
+                <Search setSearchTerm={setSearchTerm} title={'Univ Search : React Aplication'}/>
                 </section>
                 
                 {/* UNIVERSITY LIST */}
@@ -52,7 +53,7 @@ const HomePage = () => {
                 </section>
 
                 <section class="newsletter section" id="subscribed">
-                       <Newsletter />
+                       <Subscribe />
                 </section>
             </main>
         </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import './styles.scss';
 
 
-const Newsletter = props => {
+const Subscribe = props => {
     return (
         <div class="newsletter__container bd-grid">
             <div class="newsletter__ subscribe">
@@ -18,4 +18,4 @@ const Newsletter = props => {
     );
 };
 
-export default Newsletter;
+export default Subscribe;
