@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from 'react';
 import 'boxicons';
 import './styles.scss';
-import data from '../../data.json'       
+import data from '../../users.json'       
 
 // component
 import Pagination from '../../component/Pagination/pagination'
