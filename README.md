@@ -32,7 +32,8 @@ the data used in this project uses api https://github.com/Hipo/university-domain
 * web-vitals: "^0.2.4"
 
 ## Setup
-npm install --save boxicons firebase node-sass@4.14.1 react react-dom react-redux react-router-dom react-scripts web-vitals
+* npm install --save boxicons firebase node-sass@4.14.1 react react-dom react-redux react-router-dom react-scripts web-vitals
+* create a firebase project and input your API Key in config.js at Firebase folder
 
 
 ## Features
