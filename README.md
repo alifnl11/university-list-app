@@ -18,7 +18,7 @@ the data used in this project uses api https://github.com/Hipo/university-domain
 * links for worldwide : http://universities.hipolabs.com/search?
 
 ## Screenshots
-![Image](./screenshot/screenshot.PNG)
+![Image](./src/screenshot/screenshot.PNG)
 
 ## Technologies
 * boxicons: "^2.0.7"
