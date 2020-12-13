@@ -2,17 +2,8 @@ import React from 'react'
 import JubahS2 from './../../assets/img/univ.png'
 import './styles.scss'
 
-const News = ({ dataNews, loading , searchTerm}) => {
-    
-    // if(loading) {
-    //     return <div className="container"> 
-    //         <div className="loading">
-    //             <box-icon name='loader' animation='spin'></box-icon>
-    //             <h2>Loading...</h2>
-    //         </div>
-    //     </div>
-    // }
-    
+const News = ({ dataNews, searchTerm}) => {
+ 
     return (
         <div className="news__container bd-grid">
             { dataNews.filter((news) => {

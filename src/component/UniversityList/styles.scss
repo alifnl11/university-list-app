@@ -1,10 +1,9 @@
-/* univ Product */
+// Loader
 .loading{
-    // width: 1024px;
-    // justify-content: center;
     text-align: center;
 }
 
+// University List
 .univ__container{
     row-gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
@@ -70,6 +69,8 @@
     font-weight: 500;
     font-size: small;
 }
+
+// Media Quires
 @media screen and (min-width: 768px){
     .univ__container{
         display: grid;

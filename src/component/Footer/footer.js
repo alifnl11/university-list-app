@@ -9,13 +9,14 @@ const Footer = props => {
     return (
         <footer class="footer section">
             <div class="footer__container bd-grid">
+                {/* Column 1 */}
                 <div class="footer__box">
                     <h3 class="footer__title">Univ Search</h3>
                     <p class="footer__deal">Available on</p>
                     <a href="#"><img src={footer1} alt="" class="footer__store"></img></a>
                     <a href="#"><img src={footer2} alt="" class="footer__store"></img></a>
                 </div>
-
+                {/* Column 2 */}
                 <div class="footer__box">
                     <h3 class="footer__title">EXPLORE</h3>
                     <ul>
@@ -24,7 +25,7 @@ const Footer = props => {
                         <li><a href="#" class="footer__link">Favorite</a></li>
                     </ul>
                 </div>
-
+                {/* Column 3 */}
                 <div class="footer__box">
                     <h3 class="footer__title">FOLLOW</h3>
                     <a href="#" class="footer__social"><box-icon type='logo' name='facebook-circle' color='white'></box-icon></a>

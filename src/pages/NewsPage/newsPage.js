@@ -1,11 +1,10 @@
 import React, { useState, useEffect} from 'react';
-import axios from 'axios';
 import 'boxicons';
 import './styles.scss';
-import data from './../../data.json'       
+import data from '../../data.json'       
 
 // component
-import Pagination from './../../component/Pagination/pagination'
+import Pagination from '../../component/Pagination/pagination'
 
 import Search from '../../component/Search/search';
 import News from '../../component/NewsList/news';
@@ -26,14 +25,14 @@ const NewsPage = () => {
     return (
         <div>
             <main className="l-main">
-                {/* HOME */}
+                {/* Search Header */}
                 <section className="home" id="home">
                     <Search setSearchTerm={setSearchTerm} title={'Newsletter'}></Search>
                 </section>
                 
                 {/* UNIVERSITY LIST */}
                 <section className="collection section">
-                    <News dataNews={dataNews} searchTerm={searchTerm} />
+                    <News dataNews={currentPosts} searchTerm={searchTerm} />
                     <Pagination postsPerPage={postsPerPage} totalPosts={dataNews.length} paginate={paginate} />
                 </section>
 

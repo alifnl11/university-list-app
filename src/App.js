@@ -10,10 +10,10 @@ import LoginLayout from './layouts/LoginLayout'
 
 //pages
 import './default.scss';
-import HomePage from './pages/HomePage/index';
-import LoginPage from './pages/Login/index';
-import RegisterPage from './pages/Register/index';
-import NewsPage from './pages/NewsPage/index';
+import HomePage from './pages/HomePage/homePage';
+import LoginPage from './pages/Login/loginPage';
+import RegisterPage from './pages/Register/registerPage';
+import NewsPage from './pages/NewsPage/newsPage';
 
 const initialState = {
   currentUser: null

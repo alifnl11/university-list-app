@@ -1,6 +1,6 @@
 import React from 'react';
-import Footer from '../component/Footer/index';
-import Header from './../component/Header/index'
+import Footer from '../component/Footer/footer';
+import Header from '../component/Header/header'
 
 const MainLayout = props => {
     return (

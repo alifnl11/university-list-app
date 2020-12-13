@@ -1,5 +1,5 @@
 import React from 'react'
-import JubahS2 from './../../assets/img/univ.png'
+import ProductIMG from './../../assets/img/univ.png'
 import './styles.scss'
 
 const Posts = ({ posts, loading , searchTerm}) => {
@@ -24,10 +24,12 @@ const Posts = ({ posts, loading , searchTerm}) => {
             }).map(post => {
                 return (
                     <div key={post.id} className="univ__product">
+                        {/* Picture Box */}
                         <div className="univ__box">
                             <div className="univ__new">{post.alpha_two_code}</div>
-                            <img src={JubahS2} alt="" className="univ__img"></img>
+                            <img src={ProductIMG} alt="" className="univ__img"></img>
                         </div>
+                        {/* University Data */}
                         <div className="univ__data">
                             <div className="univ__name">
                                 <h3>{post.name} <br></br> <span className="univ__country">{post.country}</span></h3>

@@ -2,13 +2,12 @@ import React, { useState, useEffect} from 'react';
 import axios from 'axios';
 import 'boxicons';
 import './styles.scss';
-import Footer from './../../component/Footer/index'
 
 // page
 import Subscribe from './content/Subscribe/subscribe';
 
-import Posts from './../../component/UniversityList/index'
-import Pagination from './../../component/Pagination/pagination'
+import Posts from '../../component/UniversityList/univList'
+import Pagination from '../../component/Pagination/pagination'
 
 import Search from '../../component/Search/search';
 
@@ -49,7 +48,6 @@ const HomePage = () => {
                 <section className="collection section">
                     <Posts posts={currentPosts} loading={loading} searchTerm={searchTerm} />
                     <Pagination postsPerPage={postsPerPage} totalPosts={posts.length} paginate={paginate} />
-                    {/* <UniversityList /> */}
                 </section>
 
                 <section class="newsletter section" id="subscribed">

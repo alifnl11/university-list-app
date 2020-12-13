@@ -3,7 +3,7 @@ import './styles.scss'
 import 'boxicons';
 import LoginImg from './../../assets/img/login.svg';
 
-import { auth, handleUserProfile } from './../../firebase/utils';
+import { auth, handleUserProfile } from '../../firebase/utils';
 
 
 const initialState = {
@@ -35,7 +35,7 @@ class Register extends Component {
     handleFormSubmit = async event => {
         event.preventDefault();
         const { displayName, email, password, confirmPassword} = this.state;
-        
+             
         if ( password !== confirmPassword) {
             const err = ['Password Don\'t Match'];
             this.setState({
@@ -71,6 +71,7 @@ class Register extends Component {
                             <img src={LoginImg} alt=""></img>
                         </div>
 
+                        {/* Warning message */}
                         {errors.length > 0 && (
                             <p>
                                 {errors.map((err, index) => {
@@ -82,11 +83,12 @@ class Register extends Component {
                                 })}
                             </p>
                         )}
-
+                        {/* Input data register form */}
                         <div class="login__forms" onSubmit={this.handleFormSubmit}>
                             <form action=""  class=" login__create" id="login-up">
                                 <h1 class="login__title">Create Account</h1>
-                                {displayName}
+
+                                {/* Username Text Input */}
                                 <div class="login__box">
                                     <box-icon name='user'></box-icon>
                                     <input 
@@ -99,6 +101,7 @@ class Register extends Component {
                                     </input>
                                 </div>
 
+                                {/* Email Text Input */}
                                 <div class="login__box">
                                     <box-icon name='envelope'></box-icon>
                                     <input 
@@ -111,6 +114,7 @@ class Register extends Component {
                                     </input>
                                 </div>
 
+                                {/* Password Text Input */}
                                 <div class="login__box">
                                     <box-icon name='lock'></box-icon>
                                     <input 
@@ -123,6 +127,7 @@ class Register extends Component {
                                     </input>
                                 </div>
 
+                                {/* Confirm Password Text Input */}
                                 <div class="login__box">
                                     <box-icon name='lock'></box-icon>
                                     <input 
@@ -135,6 +140,7 @@ class Register extends Component {
                                     </input>
                                 </div>
 
+                                {/* Sign Up Button */}
                                 <button type="submit" class="login__button">Sign Up</button>
 
                                 <div>
